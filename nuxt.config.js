@@ -52,10 +52,13 @@ export default {
   oneSignal: {
     init: {
       appId: '2a2eef8e-f327-418b-baa4-7ed5c41c3cc3',
-      allowLocalhostAsSecureOrigin: false,
+      allowLocalhostAsSecureOrigin: true,
       welcomeNotification: {
-          disable: false
-      }
+          disable: true
+      },
+      notifyButton: {
+        enable: true,
+      },
     }
   },
 
@@ -71,9 +74,9 @@ export default {
       display: 'standalone',
       icons: [
         {
-          src: './static/favicon.ico',
+          src: './static/icon.png',
           sizes: '196x196',
-          type: 'image/x-icon',
+          type: 'image/png',
           purpose: 'any maskable',
         },
       ],
