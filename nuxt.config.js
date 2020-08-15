@@ -69,6 +69,14 @@ export default {
       short_name: 'NUXT PWA',
       lang: 'en',
       display: 'standalone',
+      icons: [
+        {
+          src: './static/favicon.ico',
+          sizes: '196x196',
+          type: 'image/x-icon',
+          purpose: 'any maskable',
+        },
+      ],
     },
   },
   /*
