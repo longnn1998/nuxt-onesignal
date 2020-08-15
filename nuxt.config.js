@@ -47,22 +47,19 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [
-    '@nuxtjs/pwa',
-    [
-      '@nuxtjs/onesignal',
-      {
-        init: {
-          appId: 'a345a76d-604d-4ed5-b206-6715e8827c40',
-          allowLocalhostAsSecureOrigin: true,
-          importScripts: [],
-          welcomeNotification: {
-            disable: true,
-          },
-        },
-      },
-    ],
-  ],
+  modules: ['@nuxtjs/pwa', '@nuxtjs/onesignal'],
+
+  oneSignal: {
+    cdn: true,
+    OneSignalSDK: 'https://cdn.onesignal.com/sdks/OneSignalSDK.js',
+    init: {
+      appId: '2a2eef8e-f327-418b-baa4-7ed5c41c3cc3',
+      allowLocalhostAsSecureOrigin: false,
+      welcomeNotification: {
+          disable: false
+      }
+    }
+  },
 
   pwa: {
     meta: {
