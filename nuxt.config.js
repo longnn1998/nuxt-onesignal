@@ -50,8 +50,6 @@ export default {
   modules: ['@nuxtjs/pwa', '@nuxtjs/onesignal'],
 
   oneSignal: {
-    cdn: true,
-    OneSignalSDK: 'https://cdn.onesignal.com/sdks/OneSignalSDK.js',
     init: {
       appId: '2a2eef8e-f327-418b-baa4-7ed5c41c3cc3',
       allowLocalhostAsSecureOrigin: false,
