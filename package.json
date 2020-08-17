@@ -12,9 +12,13 @@
   "dependencies": {
     "@nuxtjs/onesignal": "^3.0.0-beta.16",
     "@nuxtjs/pwa": "^3.0.0-beta.20",
-    "nuxt": "^2.13.0"
+    "@zxing/library": "^0.17.1",
+    "nuxt": "^2.13.0",
+    "quagga": "^0.12.1",
+    "vue-barcode": "^1.2.0"
   },
   "devDependencies": {
+    "@nuxtjs/vuetify": "^1.11.2",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
     "prettier": "^2.0.5"
